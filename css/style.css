@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*header*/
+
+header {width: 2000px; height: 700px; background-color: green;}
+
+/*nav*/
+nav{list-style: none; text-align: center;}
+
+/*menu*/
+#all__menu >a {text-decoration: none;}
+#menu__depth0 > li > a {text-decoration: none;}
+#menu__depth1 > li > a {text-decoration: none;}
+
+/*slider*/
+#slider {width: 2000px; height: 600px; background-color: aquamarine; position: relative; overflow: hidden; align-items: center; justify-content: center; background-color: blueviolet;} 
+.slider__wrap {width: 100%; height: 600px; display: flex; position:absolute; overflow: hidden;}
+.slider__img {width: 100%; height: 600px; top:0; left:0;}
+.slider__img:not(:first-child) {display: none;}
+
+
+
+/*section*/
+section {width: 2000px; height: 7200px; background-color: gold;}
+section >.title { text-align: center; color: black; }
+
+/*금주의 추천상품*/
+.weekly {width: 1200px; height: 530px; display:flex; flex-wrap:wrap; justify-content:center; background-color: orange;}
+.weekly__img{width: 380px; height: 480px; margin:10px;  background-color: blue; }
+.weekly__img > a > img{width: 100%; height:75%;}
+
+/*못난이 과일*/
+.ugly {width: 1200px; height: 400px; display:flex; flex-wrap:wrap; justify-content:center; background-color: red;}
+.ugly__img {width: 280px; height: 380px; margin:10px;  background-color: skyblue;}
+.ugly__img > a > img{width: 100%; height:75%;}
+
+/*해외 직수입 과일*/
+.import {width: 1200px; height: 1700px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: green;}
+.import__img {width: 280px; height: 400px; margin:10px;  background-color: pink;}
+.import__img > a > img{width: 100%; height:75%; }
+
+/*국산 제철 먹거리*/
+.season {width: 1200px; height: 780px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: orange;}
+.season__img {width: 280px; height: 380px;  margin:0 auto; background-color: pink;}
+.season__img > a > img{width: 100%; height:75%; }
+
+/*파트너스*/
+.partners {width: 1200px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: purple;}
+.partners__img {width: 280px; height: 380px;  margin:10px;  background-color: pink;}
+.partners__img > a > img{width: 100%; height:75%; }
+
+/*카테고리*/
+.category {width: 1200px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: greenyellow;}
+.category__img {width:380px; height:250px; margin: 10px;}
+.category__img > a > img{width: 100%; height: 100%;}
+
+/*만나몰 이야기*/
+.story {width: 1200px; height: 1200px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: plum;}
+.story__box {width: 290px; height: 500px; padding:10px; background-color: red;}
+.story__box__img {width: 280px; height: 480px; padding:10px; background-color: red;}
+.story__box__img > a > img {width: 260px; height: 380px;}
+
+
+/*footer*/
+footer {width: 100%; height: 750px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: gray;}
