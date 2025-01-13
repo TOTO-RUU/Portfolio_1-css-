@@ -9,22 +9,23 @@ header {width: 1450px; height: 300px; background-color: green; }
 
 .header__box {width: 1200px; height: 150px; display: flex; background-color: maroon;}
 
-.search {width: 230px; height: 20px; display:inline-block; vertical-align:middle; background-color: pink;}
-.search > img {width: 20px; height: 20px; margin: 0px;}
+.search {width: 230px; height: 30px; display:inline-block; background-color: pink;}
+.search > input {margin: 0px; }
+.search > img {width: 18px; height: 18px; align-content:center; padding: 0px auto;}
 .header__logo {width: 380px; height: 150px; background-color: pink}
 .header__logo > a > img {width: 380px; height: 100%; flex-wrap:wrap; justify-content:center; align-content:center; }
 
-.recipe__story {width: 300px; height: 21px; background-color: pink; display:inline-block;}
-.recipe__story > ul > li > a {color: #666666; }
+.recipe__story {width: 300px; height: 50px; float: left; background-color: pink; display:inline-block;}
+.recipe__story > ul {float: right;}
+.recipe__story > ul > li {float:left; color: #666666; }
 
 /*nav*/
-nav{width:1200px;  text-align: center; background-color: blue;}
+nav{width:1200px;  text-align: center; background-color: white;}
 nav > ul {display: inline-flex ;}
 
 /*menu*/
 .all__menu > li > a {text-align:center;}
-.menu__depth0 > li > a {display: inline-block; color: #666666;}
-.menu__depth1 > li > a {display: inline-block; color: #666666;}
+.menu__depth0 > li > a {display: flex; color: #666666;}
 
 /*slider*/
 #slider {width: 2000px; height: 600px; background-color: aquamarine; position: relative; overflow: hidden; align-items: center; justify-content: center; background-color: blueviolet;} 
@@ -39,43 +40,51 @@ section {width: 1450px; height: 5720px; background-color: gold;}
 section >.title { text-align: center; color: black; }
 
 /*금주의 추천상품*/
-.weekly {width: 1450px; height: 530px; display:flex; flex-wrap:wrap; justify-content:center; background-color: orange;}
-.weekly__img{width: 380px; height: 480px; margin:10px;  background-color: blue; }
+.weekly {width: 1450px; height: 530px; display:flex; flex-wrap:wrap; justify-content:center;}
+.weekly__img{width: 380px; height: 480px; margin:10px;}
 .weekly__img > a > img{width: 100%; height:75%;}
+.weekly__img > a {line-height: 12px;}
+.weekly__img > p {line-height: 26px;}
+.weekly__img > span {line-height: 28px;}
 
 /*못난이 과일*/
-.ugly {width: 1450px; height: 400px; display:flex; flex-wrap:wrap; justify-content:center; background-color: red;}
-.ugly__img {width: 280px; height: 380px; margin:10px;  background-color: skyblue;}
+.ugly {width: 1450px; height: 400px; display:flex; flex-wrap:wrap; justify-content:center;}
+.ugly__img {width: 280px; height: 380px; margin:10px;}
 .ugly__img > a > img{width: 100%; height:75%;}
 
 /*해외 직수입 과일*/
-.import {width: 1450px; height: 1700px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: green;}
-.import__img {width: 280px; height: 400px; margin:10px;  background-color: pink;}
-.import__img > a > img{width: 100%; height:75%; }
+.import {width: 1450px; height: 1700px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+.import__img {width: 280px; height: 400px; margin:10px;}
+.import__img > a > img{width: 100%; height:75%;}
+.import__img > a > strong {font-size: 15px;}
+.import__img > p {line-height: 26px;}
+.import__img > span {line-height: 28px;}
 
 /*국산 제철 먹거리*/
-.season {width: 1450px; height: 780px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: orange;}
+.season {width: 1450px; height: 780px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
 .season__box {width: 1200px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; }
-.season__img {width: 280px; height: 380px;  margin:0 auto; background-color: pink;}
+.season__img {width: 280px; height: 380px;  margin:0 auto;}
 .season__img > a > img{width: 100%; height:75%; }
+.namecolor {color: green;}
+.season__img > a > strong {font-size: 15px;}
+.season__img > p {line-height: 26px;}
+.season__img > span {line-height: 26px;}
 
 /*파트너스*/
-.partners {width: 1450px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: purple;}
-.partners__img {width: 280px; height: 380px;  margin:10px;  background-color: pink;}
+.partners {width: 1450px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+.partners__img {width: 280px; height: 380px;  margin:10px;}
 .partners__img > a > img{width: 100%; height:75%; }
+.partners__img > a > strong {font-size: 16px; line-height: 30px;}
 
 /*카테고리*/
-.category {width: 1450px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; background-color: greenyellow;}
+.category {width: 1450px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
 .category__img {width:380px; height:250px; margin: 10px;}
 .category__img > a > img{width: 100%; height: 100%;}
 
 /*만나몰 이야기*/
-.story {width: 1450px; height: 520px; display:flex; flex-wrap:wrap; justify-content:center; align-content: center; background-color: plum;}
-.story__box {width: 290px; height: 500px; margin: 0px auto; padding:5px; box-sizing: border-box;
-            background-color: red;
-            text-align: center; justify-content: center; align-items: center;
-            }
-.story__box__img {width: 280px; height: 400px; padding:10px; background-color: brown;}
+.story {width: 1450px; height: 520px; display:flex; flex-wrap:wrap; justify-content:center; align-content: center;}
+.story__box {width: 290px; height: 500px; margin: 0px auto; padding:5px; box-sizing: border-box; text-align: center; justify-content: center; align-items: center;}
+.story__box__img {width: 280px; height: 400px; padding:10px;}
 .story__box__img > a > img {width: 260px; height: 380px;}
 
 .story__box > h4 > {font-size: 11px; color: #000;}
