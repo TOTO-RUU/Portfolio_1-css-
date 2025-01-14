@@ -2,33 +2,36 @@
 
 /*header*/
 
-header {width: 1450px; height: 300px; background-color: green; }
+header {width: 100%; height: 290px;}
 
-.login{width: 1200px; height: 45px; float: right; margin:5px;} 
-.login > ul > li {float: left; margin: 0 5px; background-color: palegreen; font-size: 12px;}
+#header__top {width: 1200px; height: 10px;}
+.login{width: 1200px;}
+.login__box{width: 360px; height: 20px; float: right; margin:5px; display: flex; font-size: 11px; }
 
-.header__box {width: 1200px; height: 150px; display: flex; background-color: maroon;}
+#header__bottom {width: 1200px; height: 10px;}
 
-.search {width: 230px; height: 30px; display:inline-block; background-color: pink;}
-.search > input {margin: 0px; }
-.search > img {width: 18px; height: 18px; align-content:center; padding: 0px auto;}
-.header__logo {width: 380px; height: 150px; background-color: pink}
+.header__box {width: 1200px; height: 200px; display: flex;}
+
+.search {height: 26px; display:block;  margin: 50px 0 0 30px; border-bottom: 2px solid #adadad;}
+.search > input {margin: 0px; vertical-align: middle; border: none;}
+.search > img {width: 18px; height: 18px; align-content:center; padding: 0px auto; }
+.header__logo {width: 380px; height: 150px; }
 .header__logo > a > img {width: 380px; height: 100%; flex-wrap:wrap; justify-content:center; align-content:center; }
 
-.recipe__story {width: 300px; height: 50px; float: left; background-color: pink; display:inline-block;}
+.recipe__story {width: 300px; height: 50px; float: right;  margin: 50px 30px 0 0;}
 .recipe__story > ul {float: right;}
-.recipe__story > ul > li {float:left; color: #666666; }
+.recipe__story > ul > li {font-size: 12px; margin: 0 10px; float:left; color: #666666; }
 
 /*nav*/
-nav{width:1200px;  text-align: center; background-color: white;}
-nav > ul {display: inline-flex ;}
+nav {width:100%; height: 50px; text-align: center; display: inline-block; background-color: white;}
 
 /*menu*/
-.all__menu > li > a {text-align:center;}
-.menu__depth0 > li > a {display: flex; color: #666666;}
+#nav__menu {width: 1200px; height: 50px;  }
+#nav__menu__box {width: 1200px; height: 50px; flex-wrap:wrap; align-content:center; justify-content:center; }
+#nav__menu__box > ul {display: flex; color: #666666; }
 
 /*slider*/
-#slider {width: 2000px; height: 600px; background-color: aquamarine; position: relative; overflow: hidden; align-items: center; justify-content: center; background-color: blueviolet;} 
+#slider {width: 2000px; height: 660px; position: relative; overflow: hidden; align-items: center; justify-content: center;} 
 .slider__wrap {width: 100%; height: 600px; display: flex; position:absolute; overflow: hidden;}
 .slider__img {width: 100%; height: 600px; top:0; left:0;}
 .slider__img:not(:first-child) {display: none;}
@@ -36,11 +39,11 @@ nav > ul {display: inline-flex ;}
 
 
 /*section*/
-section {width: 1450px; height: 5720px; background-color: gold;}
+section {width: 1200px; height: 5720px;}
 section >.title { text-align: center; color: black; }
 
 /*금주의 추천상품*/
-.weekly {width: 1450px; height: 530px; display:flex; flex-wrap:wrap; justify-content:center;}
+.weekly {width: 1200px; height: 530px; display:flex; flex-wrap:wrap; justify-content:center;}
 .weekly__img{width: 380px; height: 480px; margin:10px;}
 .weekly__img > a > img{width: 100%; height:75%;}
 .weekly__img > a {line-height: 12px;}
@@ -48,12 +51,12 @@ section >.title { text-align: center; color: black; }
 .weekly__img > span {line-height: 28px;}
 
 /*못난이 과일*/
-.ugly {width: 1450px; height: 400px; display:flex; flex-wrap:wrap; justify-content:center;}
+.ugly {width: 1200px; height: 400px; display:flex; flex-wrap:wrap; justify-content:center;}
 .ugly__img {width: 280px; height: 380px; margin:10px;}
 .ugly__img > a > img{width: 100%; height:75%;}
 
 /*해외 직수입 과일*/
-.import {width: 1450px; height: 1700px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+.import {width: 1200px; height: 1700px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
 .import__img {width: 280px; height: 400px; margin:10px;}
 .import__img > a > img{width: 100%; height:75%;}
 .import__img > a > strong {font-size: 15px;}
@@ -61,7 +64,7 @@ section >.title { text-align: center; color: black; }
 .import__img > span {line-height: 28px;}
 
 /*국산 제철 먹거리*/
-.season {width: 1450px; height: 780px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+.season {width: 1200px; height: 780px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
 .season__box {width: 1200px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; }
 .season__img {width: 280px; height: 380px;  margin:0 auto;}
 .season__img > a > img{width: 100%; height:75%; }
@@ -71,19 +74,19 @@ section >.title { text-align: center; color: black; }
 .season__img > span {line-height: 26px;}
 
 /*파트너스*/
-.partners {width: 1450px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+.partners {width: 1200px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
 .partners__img {width: 280px; height: 380px;  margin:10px;}
 .partners__img > a > img{width: 100%; height:75%; }
 .partners__img > a > strong {font-size: 16px; line-height: 30px;}
 
 /*카테고리*/
-.category {width: 1450px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
+.category {width: 1200px; height: 800px; display:flex; flex-wrap:wrap; justify-content:center; align-content:center;}
 .category__img {width:380px; height:250px; margin: 10px;}
 .category__img > a > img{width: 100%; height: 100%;}
 
 /*만나몰 이야기*/
-.story {width: 1450px; height: 520px; display:flex; flex-wrap:wrap; justify-content:center; align-content: center;}
-.story__box {width: 290px; height: 500px; margin: 0px auto; padding:5px; box-sizing: border-box; text-align: center; justify-content: center; align-items: center;}
+.story {width: 1200px; height: 520px; display:flex; flex-wrap:wrap; justify-content:center; align-content: center;}
+.story__box {width: 290px; height: 500px; margin: 5px auto; border:1px solid lightgray; background-color: lightgray; padding:5px; box-sizing: border-box; text-align: center; justify-content: center; align-items: center;}
 .story__box__img {width: 280px; height: 400px; padding:10px;}
 .story__box__img > a > img {width: 260px; height: 380px;}
 
@@ -93,21 +96,42 @@ section >.title { text-align: center; color: black; }
 
 
 /*footer*/
-footer {width: 1450px; height: 600px; background-color: gray; color: white;}
+footer {width: 100%; height: 500px; background-color: gray; color: white;}
+
+#footer {width: 1200px;}
 
 .company__box {height: 100px;}
 .info {width: 1200px; height: 150px; 
-        background-color: gold;
         display:flex; flex-wrap:wrap; justify-content:center; align-content:center;
         position: relative;}
 
-.company__logo{width: 300px; height: 150px; margin:0px; display: inline-block; background-color: blueviolet; }
-.company__logo > a > img {height: 150px;}
+.company__logo{width: 305px; height: 152px; margin:0px; display: inline-block; }
+.company__logo > a > img {width: 240px; height: 150px;}
 
-.costumer__service{width: 300px; height: 150px; margin:0px; display: inline-block; background-color: blueviolet;}
-.costumer__service > p {font-size: 11px;}
+/*고객센터*/
+.costumer__service{width: 305px; height: 152px; margin:0px; padding: 0 45px; display: inline-block; border-left :1px solid gray;}
+.costumer__service > h3 {height: 34px;}
+.costumer__service > p {font-size: 11px; line-height: 1.8;}
 
-.deposit{width: 300px; height: 150px; margin:0px; display: inline-block; background-color: blueviolet;}
-.help{width: 300px; height: 150px; margin:0px; display: inline-block; background-color: blueviolet;}
+/*무통장입금*/
+.deposit {width: 305px; height: 152px; margin:0px; padding: 0 45px; float: left; border-left :1px solid gray; }
+.deposit > h3{width:100%; height:34px; padding-bottom: 5px;}
+.deposit__info{width: 305px; height: 118px; }
+.deposit__bank {width: 160px; height: 118px; display: inline-block; float: left;}
+.deposit__bank > strong {width: 160px; height: 40px;}
+.deposit__bank > p {width: 160px; height: 40px; font-size: 11px; line-height: 1.8; display: inline-block;}
+.deposit__bank__img {width: 60px; height: 118px; display: inline-block; float: left;}
+.deposit__bank__img > img {width: 60px; height: 60px; } 
 
-.company__info {width: 1200px; height: 230px; background-color: green;}
+/*도움*/
+.help{width: 260px; height: 152px; margin:0px; display: inline-block;}
+.help__box {width: 260px; height: 34px;}
+.help > ul > li {width: 80px; height: 80px; display: inline-block; }
+
+.company__info {width: 1200px; height: 100px; line-height: 1.8; }
+.company__info > ul {width: 300px; padding:13px 0 0 13px; display: block; font-size: 11px;}
+.company__info > ul > li {width: 50%; float: left; }
+
+.company__info__box {width: 1200px; height: 130px; }
+
+.company__adress > ul {text-align: center; font-size: 11px;}
